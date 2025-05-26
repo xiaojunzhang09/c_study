@@ -4,6 +4,9 @@ project(c_001)
 set(CMAKE_CXX_STANDARD 11)
 #set(CMAKE_CXX_FLAGS -stdlib=libstdc++)
 
+#添加的为这两行
+find_package(Boost 1.88.0 REQUIRED COMPONENTS filesystem)
+include_directories("/usr/local/Cellar/boost/1.88.0/include")
 
 # 添加头文件搜索路径
 include_directories(${PROJECT_SOURCE_DIR}/include)
@@ -33,7 +36,14 @@ add_executable(c_001 "第4章 C++基础容器/src/demo4-4.cpp" "第4章 C++基�
         "第9章 C++进阶编程/src/Demo9-6/Demo9-6.cpp"
         "第9章 C++进阶编程/src/MyGC/GCPtr.h"
         "第9章 C++进阶编程/src/MyGC/MyGC.cpp"
-        "第9章 C++进阶编程/src/Demo9-7/Demo9-7.cpp")
+        "第9章 C++进阶编程/src/Demo9-7/Demo9-7.cpp"
+        "第9章 C++进阶编程/src/Demo9-8/jjalloc.h"
+        "第9章 C++进阶编程/src/Demo9-8/Demo9-8.cpp"
+        "第9章 C++进阶编程/src/Demo9-9/Demo9-9.cpp"
+        "第9章 C++进阶编程/src/Demo9-10/Demo9-10.cpp"
+        "第9章 C++进阶编程/src/Demo9-10/Demo9-10-1.cpp"
+        "第9章 C++进阶编程/src/Demo9-11/Demo9-11.cpp"
+        "第9章 C++进阶编程/src/Demo9-11/Demo9-11-1.cpp")
 
 add_executable(demo4-4 "第4章 C++基础容器/src/demo4-4.cpp")
 add_executable(demo4-5 "第4章 C++基础容器/src/demo4-5.cpp")
@@ -76,3 +86,8 @@ add_executable(Demo9-4 "第9章 C++进阶编程/src/Demo9-4/Demo9-4.cpp")
 add_executable(Demo9-5 "第9章 C++进阶编程/src/Demo9-5/Demo9-5.cpp")
 add_executable(Demo9-6 "第9章 C++进阶编程/src/Demo9-6/Demo9-6.cpp")
 add_executable(Demo9-7 "第9章 C++进阶编程/src/Demo9-7/Demo9-7.cpp")
+add_executable(Demo9-9 "第9章 C++进阶编程/src/Demo9-9/Demo9-9.cpp")
+add_executable(Demo9-10-1 "第9章 C++进阶编程/src/Demo9-10/Demo9-10-1.cpp")
+add_executable(Demo9-10 "第9章 C++进阶编程/src/Demo9-10/Demo9-10.cpp")
+add_executable(Demo9-11-1 "第9章 C++进阶编程/src/Demo9-11/Demo9-11-1.cpp")
+add_executable(Demo9-11 "第9章 C++进阶编程/src/Demo9-11/Demo9-11.cpp")
