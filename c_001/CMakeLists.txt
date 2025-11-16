@@ -43,7 +43,8 @@ add_executable(c_001 "第4章 C++基础容器/src/demo4-4.cpp" "第4章 C++基�
         "第9章 C++进阶编程/src/Demo9-10/Demo9-10.cpp"
         "第9章 C++进阶编程/src/Demo9-10/Demo9-10-1.cpp"
         "第9章 C++进阶编程/src/Demo9-11/Demo9-11.cpp"
-        "第9章 C++进阶编程/src/Demo9-11/Demo9-11-1.cpp")
+        "第9章 C++进阶编程/src/Demo9-11/Demo9-11-1.cpp"
+)
 
 add_executable(demo4-4 "第4章 C++基础容器/src/demo4-4.cpp")
 add_executable(demo4-5 "第4章 C++基础容器/src/demo4-5.cpp")
