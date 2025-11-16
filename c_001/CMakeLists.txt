@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 #添加的为这两行
 find_package(Boost 1.88.0 REQUIRED COMPONENTS filesystem)
-include_directories("/usr/local/Cellar/boost/1.88.0/include")
+include_directories("/usr/local/Cellar/b    oost/1.88.0/include")
 
 # 添加头文件搜索路径
 include_directories(${PROJECT_SOURCE_DIR}/include)
