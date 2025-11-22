@@ -43,5 +43,6 @@ int main(void) {
     ipaddr.s_addr = inet_addr("192.168.1.2"); /* 将点分十进制IP地址字符串转换为网络字节序的二进制格式 */
     printf("ipaddr=%s\n",inet_ntoa(ipaddr));  /* 将网络字节序的IP地址转换回点分十进制字符串并打印输出 */
 
+    //
     return 0;
 }
